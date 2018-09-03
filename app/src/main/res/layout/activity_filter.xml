@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.looky.lookyapp.FilterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쇼핑몰 필터"
+                android:layout_centerInParent="true" />
+
+            <ImageButton
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_close"
+                />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkgray"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text="카테고리"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/womanCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/transparent"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/womanOuter"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="아우터"
+                                android:textOn="아우터"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanTop"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="상의"
+                                android:textOn="상의"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanShirts"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="셔츠"
+                                android:textOn="셔츠"
+                                android:background="@drawable/toggle_button_background" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+
+                            <ToggleButton
+                                android:id="@+id/womanPants"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="바지"
+                                android:textOn="바지"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanSkirt"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="스커트"
+                                android:textOn="스커트"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanOnepiece"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="원피스"
+                                android:textOn="원피스"
+                                android:background="@drawable/toggle_button_background" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+
+                            <ToggleButton
+                                android:id="@+id/womanBeach"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="비치웨어"
+                                android:textOn="비치웨어"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanFitness"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="피트니스"
+                                android:textOn="피트니스"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanPajama"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="파자마"
+                                android:textOn="파자마"
+                                android:background="@drawable/toggle_button_background" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+
+                            <ToggleButton
+                                android:id="@+id/womanCouple"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="커플룩"
+                                android:textOn="커플룩"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanShoes"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="슈즈"
+                                android:textOn="슈즈"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/womanBag"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="가방"
+                                android:textOn="가방"
+                                android:background="@drawable/toggle_button_background" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/manCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/transparent"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ToggleButton
+                                android:id="@+id/manOuter"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="아우터"
+                                android:textOn="아우터"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/manTop"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="상의"
+                                android:textOn="상의"
+                                android:background="@drawable/toggle_button_background" />
+
+
+                            <ToggleButton
+                                android:id="@+id/manShirts"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="셔츠"
+                                android:textOn="셔츠"
+                                android:background="@drawable/toggle_button_background" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <ToggleButton
+                                android:id="@+id/manPants"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="바지"
+                                android:textOn="바지"
+                                android:background="@drawable/toggle_button_background" />
+
+
+                            <ToggleButton
+                                android:id="@+id/manSuit"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="수트"
+                                android:textOn="수트"
+                                android:background="@drawable/toggle_button_background" />
+
+
+
+                            <ToggleButton
+                                android:id="@+id/manBeach"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="비치웨어"
+                                android:textOn="비치웨어"
+                                android:background="@drawable/toggle_button_background" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <ToggleButton
+                                android:id="@+id/manCouple"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="커플룩"
+                                android:textOn="커플룩"
+                                android:background="@drawable/toggle_button_background" />
+
+
+                            <ToggleButton
+                                android:id="@+id/manShoes"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="슈즈"
+                                android:textOn="슈즈"
+                                android:background="@drawable/toggle_button_background" />
+
+                            <ToggleButton
+                                android:id="@+id/manBag"
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/toggle_color"
+                                android:textOff="가방"
+                                android:textOn="가방"
+                                android:background="@drawable/toggle_button_background" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/womanSubCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/darkgray"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="서브카테고리"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/womanSubOuter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ToggleButton
+                                        android:id="@+id/womanCardigan"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="가디건"
+                                        android:textOn="가디건"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanVest"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="베스트"
+                                        android:textOn="베스트"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanZipup"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="집업"
+                                        android:textOn="집업"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanJacket"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="자켓"
+                                        android:textOn="자켓"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanJumper"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="점퍼"
+                                        android:textOn="점퍼"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanMilitaryJumper"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="야상/라쿤"
+                                        android:textOn="야상/라쿤"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanCoat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="코트"
+                                        android:textOn="코트"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanPadding"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="패딩"
+                                        android:textOn="패딩"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/womanSubTop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="티셔츠"
+                                        android:textOn="티셔츠"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanBustierTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="뷔스티에"
+                                        android:textOn="뷔스티에"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanMantoman"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="맨투맨"
+                                        android:textOn="맨투맨"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanHoodTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="후드티"
+                                        android:textOn="후드티"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanKnitTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="니트"
+                                        android:textOn="니트"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanTurtleNeckTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="폴라티"
+                                        android:textOn="폴라티"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/womanSubShirts"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/woman_Shirts"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="셔츠"
+                                        android:textOn="셔츠"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanBlouse"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="블라우스"
+                                        android:textOn="블라우스"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/womanSubPants"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanJeans"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="데님/청바지"
+                                        android:textOn="데님/청바지"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanCottonPants"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="면바지"
+                                        android:textOn="면바지"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanSlacks"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="슬랙스"
+                                        android:textOn="슬랙스"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanTrainingPants"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="트레이닝/조거"
+                                        android:textOn="트레이닝/조거"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/womanSubShoes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanSneakers"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="스니커즈"
+                                        android:textOn="스니커즈"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanSlipon"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="슬립온"
+                                        android:textOn="슬립온"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanBoots"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="부츠/워커"
+                                        android:textOn="부츠/워커"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanFlat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="플랫"
+                                        android:textOn="플랫"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanLoafer"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="로퍼"
+                                        android:textOn="로퍼"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanHeel"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="힐/펌프스"
+                                        android:textOn="힐/펌프스"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanSlipper"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="슬리퍼"
+                                        android:textOn="슬리퍼"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanSandal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="샌들"
+                                        android:textOn="샌들"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanRainBoots"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="장화"
+                                        android:textOn="장화"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/womanSubBag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanBackpack"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="백팩"
+                                        android:textOn="백팩"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanCrossBack"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="크로스백"
+                                        android:textOn="크로스백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanShoulderBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="숄더백"
+                                        android:textOn="숄더백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanToteBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="토트백"
+                                        android:textOn="토트백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanClutch"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="클러치"
+                                        android:textOn="클러치"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanWaistBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="힙색"
+                                        android:textOn="힙색"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanMiniBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="미니백"
+                                        android:textOn="미니백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanWalletBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="지갑"
+                                        android:textOn="지갑"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanPouch"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="파우치"
+                                        android:textOn="파우치"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/womanEcoBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="에코백"
+                                        android:textOn="에코백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanCottonBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="코튼백"
+                                        android:textOn="코튼백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/womanLeatherBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="레더백"
+                                        android:textOn="레더백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/manSubCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/darkgray"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="서브카테고리"
+                                android:textColor="@color/colorPrimaryDark" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:id="@+id/manSubOuter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <ToggleButton
+                                        android:id="@+id/manCardigan"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="가디건"
+                                        android:textOn="가디건"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manVest"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="베스트"
+                                        android:textOn="베스트"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manZipup"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="집업"
+                                        android:textOn="집업"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manJacket"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="자켓"
+                                        android:textOn="자켓"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manJumper"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="점퍼"
+                                        android:textOn="점퍼"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manMilitaryJumper"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="야상/라쿤"
+                                        android:textOn="야상/라쿤"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manCoat"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="코트"
+                                        android:textOn="코트"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manPadding"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="패딩"
+                                        android:textOn="패딩"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/manSubTop"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="티셔츠"
+                                        android:textOn="티셔츠"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manMantoman"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="맨투맨"
+                                        android:textOn="맨투맨"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manHoodTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="후드티"
+                                        android:textOn="후드티"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manKnitTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="니트"
+                                        android:textOn="니트"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manTurtleNeckTee"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="폴라티"
+                                        android:textOn="폴라티"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/manSubPants"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manJeans"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="데님/청바지"
+                                        android:textOn="데님/청바지"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manCottonPants"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="면바지"
+                                        android:textOn="면바지"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manSlacks"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="슬랙스"
+                                        android:textOn="슬랙스"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manTrainingPants"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="트레이닝/조거"
+                                        android:textOn="트레이닝/조거"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manCargoPants"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="카고"
+                                        android:textOn="카고"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/manSubShoes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manSneakers"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="스니커즈"
+                                        android:textOn="스니커즈"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manSlipon"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="슬립온"
+                                        android:textOn="슬립온"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manBoots"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="부츠/워커"
+                                        android:textOn="부츠/워커"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manLoafer"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="로퍼"
+                                        android:textOn="로"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manHeel"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="구두"
+                                        android:textOn="구두"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manOxford"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="옥스포드"
+                                        android:textOn="옥스포드"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manSlipper"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="슬리퍼"
+                                        android:textOn="슬리퍼"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manSandal"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="샌들"
+                                        android:textOn="샌들"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manElevator"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="키높이"
+                                        android:textOn="키높이"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/manSubBag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:background="@color/transparent"
+                                android:padding="10dp"
+                                android:visibility="gone">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manBackpack"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="백팩"
+                                        android:textOn="백팩"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manCrossBack"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="크로스백"
+                                        android:textOn="크로스백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manShoulderBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="숄더백"
+                                        android:textOn="숄더백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp">
+
+
+                                    <ToggleButton
+                                        android:id="@+id/manToteBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="토트백"
+                                        android:textOn="토트백"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manClutch"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="클러치"
+                                        android:textOn="클러치"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                    <ToggleButton
+                                        android:id="@+id/manWaistBag"
+                                        android:layout_width="0dp"
+                                        android:layout_height="40dp"
+                                        android:layout_weight="1"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/toggle_color"
+                                        android:textOff="힙색"
+                                        android:textOn="힙색"
+                                        android:background="@drawable/toggle_button_background" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent" >
+
+            <Button
+                android:id="@+id/confirmButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="선택완료"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "15480775286",
+    "firebase_url": "https://looky-53053.firebaseio.com",
+    "project_id": "looky-53053",
+    "storage_bucket": "looky-53053.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15480775286:android:1a89ed4139f503f8",
+        "android_client_info": {
+          "package_name": "com.looky.lookyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15480775286-llvt0hflbmv7uuseokvbgvk9np3rrn4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD1O_SUA_4TQ6kNXrS3NtAGQzBZ6ug5NI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

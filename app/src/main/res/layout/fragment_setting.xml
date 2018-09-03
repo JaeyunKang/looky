@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    tools:context="com.looky.lookyapp.SettingFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkgray"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:text="프로필"
+                />
+
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:paddingLeft="15dp"
+                android:padding="15dp"
+                android:text="강재윤"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkgray"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:text="활동"
+                />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:layout_marginBottom="2dp"
+                android:padding="15dp"
+                android:text="로그아웃"
+                />
+
+            <TextView
+                android:id="@+id/send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:padding="15dp"
+                android:text="문의/건의하기"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/darkgray"
+                android:padding="15dp"
+                android:text="v1.23"
+                android:textSize="10dp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

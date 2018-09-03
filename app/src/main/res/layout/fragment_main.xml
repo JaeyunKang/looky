@@ -1,0 +1,330 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.looky.lookyapp.MainFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="80dp" />
+
+            <ImageView
+                android:id="@+id/like1"
+                android:src="@drawable/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="70dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/dislike1"
+                android:src="@drawable/dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="70dp"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="45dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="13dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/scoreText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/scoreView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="80dp" />
+
+            <ImageView
+                android:id="@+id/like2"
+                android:src="@drawable/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="70dp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/dislike2"
+                android:src="@drawable/dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="70dp"
+                android:visibility="invisible" />
+
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="45dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="13dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/scoreText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/scoreView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/firstTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:alpha="0.6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:layout_above="@+id/arrow_back"
+            android:layout_marginBottom="10dp"
+            android:text="싫어요"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_above="@+id/arrow_forward"
+            android:layout_marginBottom="10dp"
+            android:text="좋아요"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:src="@drawable/arrow_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/finger"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            />
+
+        <ImageView
+            android:id="@+id/arrow_forward"
+            android:src="@drawable/arrow_forward"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/finger"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            />
+
+        <ImageView
+            android:id="@+id/finger"
+            android:src="@drawable/ic_finger"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/finger"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="사진을 좌우로 넘겨서 평가해보세요!"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/nextTutorial"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="다음"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:alpha="0.6" />
+
+        <ImageView
+            android:src="@drawable/arrow_right_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="90dp"
+            android:text="필터"
+            android:textColor="@color/white"
+            />
+
+
+        <ImageView
+            android:src="@drawable/arrow_right_down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="70dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="130dp"
+            android:layout_marginRight="110dp"
+            android:text="쇼핑몰 바로가기"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/completeTutorial"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:text="확인"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Looky</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hint_email">이메일</string>
+    <string name="hint_password">비밀번호</string>
+    <string name="hint_passwordCheck">비밀번호확인</string>
+    <string name="hint_name">닉네임</string>
+    <string name="hint_age">나이</string>
+    <string name="btn_login">로그인</string>
+    <string name="btn_register">회원가입</string>
+    <string name="btn_link_to_register">아직 루키 멤버가 아니신가요? 지금 가입하세요!</string>
+    <string name="btn_link_to_login">이미 가입했습니다! 로그인할게요.</string>
+
+
+    <string name="kakao_app_key">33721400ff1e35afb588097a4ffec7e9</string>
+    <string name="facebook_app_key">443799882669764</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
