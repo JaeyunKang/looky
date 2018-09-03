@@ -6,7 +6,7 @@ package com.looky.app;
 
 public class AppConfig {
 
-    private static String ip = "http://52.78.64.62/";
+    private static String ip = "http://52.78.60.61/";
 
     // Server user login url
     public static String URL_LOGIN = ip + "login.php";

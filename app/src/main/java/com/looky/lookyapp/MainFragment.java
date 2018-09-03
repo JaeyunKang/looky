@@ -551,6 +551,7 @@ public class MainFragment extends Fragment {
                 try {
                     JSONObject jObj = new JSONObject(response);
                     boolean error = jObj.getBoolean("error");
+
                     if (!error) {
 
                         JSONArray jsonArray = jObj.getJSONArray("res");
@@ -562,6 +563,8 @@ public class MainFragment extends Fragment {
                             currentSubCategory = previousSubCategory;
                             return;
                         }
+
+
 
                         itemList.clear();
                         scoreList.clear();
@@ -603,6 +606,7 @@ public class MainFragment extends Fragment {
                         setItemLink(item2_string);
 
                     } else {
+
                         String errorMsg = jObj.getString("error_msg");
                         Toast.makeText(getApplicationContext(),
                                 errorMsg, Toast.LENGTH_LONG).show();
